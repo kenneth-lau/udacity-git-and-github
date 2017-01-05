@@ -1,0 +1,50 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+  The repository becomes a git repository and it allows for version control.
+  So that you can track changes for all files in the repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+  The staging area lets you see changes made to the working directory which
+  have not been committed to the repository.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+  You can use the staging area to decide what changes to commit to the
+  repository even after making multiple changes to the working directory.
+  The staging area lets you decide what changes to commit.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+  Branches are helpful when you want to experiment with changes to the master
+  branch. Or to make another version of your master branch. Or when you want
+  to fix a bug on the master branch. Branches lets you give a name to the change
+  so that it is easy to understand the purpose of the branch. Branches are also
+  good for developing new features. Your master branch is your production
+  quality branch.
+
+How do the diagrams help you visualize the branch structure?
+
+  Diagrams help you see the commits for each branch. You can see the parent
+  commit of each commit and which branch they are in. It also helps you
+  visualize which commits are reachable and unreachable
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+  Merging combines the commits made in two branches.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+  Pros (automatic): Git automatically figures out what to include in a merge even
+  if two people have different commits as long as they modify different sections
+  of the file.
+  Cons (automatic): Git doesn't know how to resolve conflicts when two people make
+  changes to the same section or lines in a file. A conflict occurs. And the two
+  people will need to decide on how the commits should be merged.
+
+  Committing often is a very important thing.
